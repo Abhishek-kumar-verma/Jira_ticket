@@ -1,0 +1,159 @@
+/* is the universal selector */
+*{
+    box-sizing: border-box;
+ }
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+.header-container{
+    height: 5rem;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+
+}
+.header-container>*{
+    height: 65%;
+    /* width:40%; */
+    
+    background-color:#454444;
+    border-radius: 6px;
+
+}
+
+.color-container{
+    width: 20%;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+.color{
+    height: 50%;
+    width: 12%;
+    border-radius: 4px;
+    
+}
+.pink{
+    background-color: pink;
+}
+.blue{
+    background-color: lightblue;
+}
+.green{
+    background-color: lightgreen;
+}
+.black{
+    background-color: black;
+}
+.add-cross_container,.lock-unlock_container{
+    width:8%;
+    display: flex;
+    margin: 3rem;
+    
+}
+.add-cross_container>*,.lock-unlock_container>*{
+    width: 50%;
+    height: 100%;
+    
+}
+.add,.cross,.lock,.unlock{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tool_icons{
+    font-size: 2rem;
+    /* boldness */
+    font-weight: 400;
+}
+.active{
+    background-color: rgb(62, 56, 56);
+}
+.task-input{
+    display: flex;
+    background-color: white;
+}
+
+.main-container{
+    /* 100%  height of visible screen=100vh */
+    /* 100 % width of visible screen = 100vw */
+    height: calc(100vh - 5rem);
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+/* ************* modal Styling********8 */
+.modal{
+    height: 20rem;
+    width: 35rem;
+    background-color: white;
+    position: fixed;
+    /* centering */
+    top:calc(50%-10rem);
+    left:calc(50% -17rem);
+    display:flex;
+    /* border: 1rem solid black; */
+
+}
+.input_container{
+    width: 65%;
+    height: 100%;
+    /* write after some space left from 
+    left and top  that why use paading */
+    padding: 2rem;
+
+}
+.input_container_text{
+    outline:none;
+    height: 100%;
+    width:100%;
+    border:none;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.color_group{
+    background-color: #343131;
+    height:100%;
+    width:35%;
+    padding: 1.5rem;
+    /* flex ->direction , flex spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.color_picker{
+    height: 3rem;
+    width: 6rem;
+}
+.selected{
+    border:0.2rem solid white;
+}
+.task_container{
+    height: 9rem;
+    width: 15rem;
+    background-color: white;
+}
+.task_header{
+    height: 10%;
+}
+.task_name{
+    padding: 0.5rem;
+
+}
+.task_id{
+    color: rgb(150, 144, 144);
+    margin: 0.5rem;
+    margin-left: 0rem;
+    
+}
